@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(133, 121, 203);
+}
+
+
+
+
+.contained {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.btn {
+  background-color: rgb(243, 244, 239);
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnDiv {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  /* background: #000; */
+}
+.tabs {
+  width: 100%,;
+  /* position: absolute; */
+  display: none !important;
+}
+.active-tab {
+  width: 100%;
+  display: flex !important;
+  position: relative;
+  transition: all 2s ease-in;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  /* justify-content: space-evenly !important; */
+  
+}
+.btn_active {
+  background-color: rgb(38, 28, 101);
+  color: white;
+  transition: all 1s ease;
+}
+.way{
+  /* width: 32%; */
+  background: rgb(188,190,228);
+  border-radius: 20px;
+  margin-top: 32px;
+  height: 40vh;
+}
+.wayed{
+  width: 70px;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-left: 8px;
+  height: 70px;
+}
+.wayeded{
+  width: 60px;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-left: 22px;
+  color: green;
+  height: 60px;
+  font-size: 30px;
+}
+
+
+@media (max-width: 375px) {
+  .btn {
+    background-color: rgb(243, 244, 239);
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn_active {
+    background-color: rgb(38, 28, 101);
+    color: white;
+    transition: all 1s ease;
+  }
+}
